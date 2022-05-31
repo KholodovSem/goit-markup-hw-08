@@ -1,0 +1,37 @@
+.icon-flex {
+  display: flex;
+  justify-content: center;
+
+  &__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+
+    color: #afb1b8;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+
+    border-radius: 50%;
+
+    transition: color 250ms $--default-timing-function,
+      background-color 250ms $--default-timing-function;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $--hero-title-color;
+    background-color: $--blue;
+  }
+
+  &__link:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.Instagram,
+.Twitter,
+.Facebook,
+.Linkedin {
+  fill: currentColor;
+}

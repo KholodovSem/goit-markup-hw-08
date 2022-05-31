@@ -1,0 +1,16 @@
+%button {
+  display: inline-block;
+  color: $--hero-title-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  background: $--portfolio-btn-hover-color;
+  box-shadow: $--portfolio-btn-hover-shadow;
+  border-radius: 4px;
+  padding: 10px 32px;
+  border: 0;
+
+  cursor: pointer;
+}

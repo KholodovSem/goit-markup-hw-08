@@ -1,0 +1,44 @@
+%adress {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  font-style: normal;
+
+  color: $--main-text-color;
+}
+
+.adress {
+  @extend %adress;
+  transition: color 250ms $--default-timing-function;
+
+  &:hover,
+  &:focus {
+    color: $--blue;
+  }
+
+  &.links {
+    display: flex;
+
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    cursor: pointer;
+  }
+}
+
+.item.adress + .item.adress {
+  margin-left: 50px;
+}
+
+.icon-mail {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.icon-smartphone {
+  margin-right: 10px;
+  fill: currentColor;
+  vertical-align: text-top;
+}

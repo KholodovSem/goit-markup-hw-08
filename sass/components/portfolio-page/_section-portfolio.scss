@@ -1,0 +1,8 @@
+.section-portfolio {
+  @extend %section;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}

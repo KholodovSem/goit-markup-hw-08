@@ -1,0 +1,67 @@
+.backdrop {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: $--backdrop-modal-window-color;
+
+  transition: opacity 250ms $--default-timing-function;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%) scale(1);
+  transition: scale 250ms $--default-timing-function;
+
+  min-width: 450px;
+  min-height: 581px;
+  padding: 40px;
+
+  background-color: $--hero-title-color;
+
+  box-shadow: $--modal-window-box-shadow;
+  border-radius: 4px;
+}
+
+.modal-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  min-width: 33px;
+  min-height: 33px;
+
+  color: #000000;
+  background-color: transparent;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  transition: color 250ms $--default-timing-function;
+
+  &:hover,
+  &:focus {
+    color: $--blue;
+  }
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+
+  & .modal {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+}
+
+.close-icon {
+  fill: currentColor;
+}

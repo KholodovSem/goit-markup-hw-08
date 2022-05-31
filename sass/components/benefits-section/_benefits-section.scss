@@ -1,0 +1,13 @@
+%section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.benefits-section {
+  @extend %section;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}

@@ -1,0 +1,43 @@
+.address {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+}
+
+.address-list {
+  text-align: center;
+}
+
+.address-list__maps {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: $--hero-title-color;
+  transition: color 250ms $--default-timing-function;
+
+  &:hover,
+  &:focus {
+    color: $--blue;
+  }
+}
+
+.address-list__item {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.address-list__link {
+  @extend %adress;
+  font-weight: 400;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+
+  transition: color 250ms $--default-timing-function;
+
+  &:hover,
+  &:focus {
+    color: $--blue;
+  }
+}
