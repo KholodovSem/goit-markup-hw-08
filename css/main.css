@@ -315,6 +315,14 @@ a {
   padding: 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-form-wrapper.policy label,
+  .modal-form-wrapper.policy a {
+    font-size: 14px;
+    line-height: 1.714;
+  }
+}
+
 .modal-form-wrapper.policy .policy-contract {
   color: #2196f3;
 }
