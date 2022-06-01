@@ -82,6 +82,9 @@
     letter-spacing: 0.03em;
 
     color: $--h2-color;
+    @media screen and (min-width: 758px) and (max-width: 1200px) {
+      text-align: center;
+    }
   }
 
   &.policy label,
